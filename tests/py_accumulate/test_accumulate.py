@@ -18,3 +18,9 @@ class TestClassAccumulate(unittest.TestCase):
         self.assertIsNotNone(res.get('type',None))
         self.assertEqual(res.get('type'),'version')
         
+    def test_get(self):
+        url = "acc://d4c8d9ab07daeecf50a7c78ff03c6524d941299e5601e578/ACME"
+        res = self.accumulate.get(url)
+        self.assertIsNotNone(res)
+        self.assertIsNotNone(res.get('data',None))
+        self.assertEqual(res.get('data',dict()).get('url'),url)
