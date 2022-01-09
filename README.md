@@ -2,6 +2,11 @@
 
 Python wrapper for accumulate API
 
+
+## install
+'''python
+pip install py_accumulate
+'''
 ## Usage
 
 ```python
@@ -20,3 +25,8 @@ a.get(url)
 ## Reference
 
 -https://docs.accumulatenetwork.io/accumulate/developers/api/api-reference
+
+
+## pip
+
+https://pypi.org/project/py-accumulate/0.0.1/#description
