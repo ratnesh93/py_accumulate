@@ -3,7 +3,7 @@ import sys
 import os
 sys.path.append(os.path.abspath('..'))
 sys.path.append(os.path.abspath('../src'))
-from src.py_accumulate import Accumulate
+from py_accumulate import Accumulate
 
 
 class TestClassAccumulate(unittest.TestCase):
