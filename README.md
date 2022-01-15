@@ -26,28 +26,28 @@ a.Version()
 | ------------- | ------------- |
 |   Version()   |   |
 |   Metrics()   |   metric, duration|
-- Faucet()                      :   token_account_url
-- Query()                       :   token_account_url or ADI
-- QueryChain()                  :   CHAIN_ID
-- QueryTx()                     :   txId, wait
-- QueryTxHistory()              :   UrlQuery, QueryPagination
-- QueryData()                   :   Url, EntryHash
+|Faucet() |  token_account_url|
+|Query() |  token_account_url or ADI|
+|QueryChain()             |  CHAIN_ID|
+|QueryTx()                 |  txId, wait|
+|QueryTxHistory()         |  UrlQuery, QueryPagination|
+|QueryData()              |   Url, EntryHash|
 
-- QueryKeyPageIndex()           :   Url, Key
-- QueryDataSet()                :   Url, QueryPagination, QueryOptions
-- QueryDirectory()              :   UrlQuery, QueryPagination, QueryOptions
+|QueryKeyPageIndex()        |   Url, Key|
+|QueryDataSet()           |  Url, QueryPagination, QueryOptions|
+|QueryDirectory()              |   UrlQuery, QueryPagination, QueryOptions|
 
-- Execute()                     :   sponsor, signer, signature, keyPage, payload, checkOnly
-- ExecuteCreateAdi()            :   url, publicKey, keyBookName, keyPageName
-- ExecuteCreateDataAccount()    :   url, KeyBookUrl, ManagerKeyBookUrl
-- ExecuteCreateKeyBook()        :   url, Pages
-- ExecuteCreateKeyPage()        :   url, Keys
-- ExecuteCreateToken()          :   url, Symbol, Precision, Properties
-- ExecuteCreateTokenAccount()   :   url, TokenUrl, KeyBookUrl
-- ExecuteSendTokens()           :   To, Hash, Meta
-- ExecuteAddCredits()           :   Recipient, Amount
-- ExecuteUpdateKeyPage()        :   Operation, Key, NewKey, Owner
-- ExecuteWriteData()            :   DataEntry
+|Execute()                    |   sponsor, signer, signature, keyPage, payload, checkOnly|
+|ExecuteCreateAdi()          |   url, publicKey, keyBookName, keyPageName|
+|ExecuteCreateDataAccount() |   url, KeyBookUrl, ManagerKeyBookUrl|
+|ExecuteCreateKeyBook()        |   url, Pages|
+|ExecuteCreateKeyPage()       |   url, Keys|
+|ExecuteCreateToken()        |   url, Symbol, Precision, Properties|
+|ExecuteCreateTokenAccount()|   url, TokenUrl, KeyBookUrl|
+|ExecuteSendTokens()       |   To, Hash, Meta|
+|ExecuteAddCredits()      |   Recipient, Amount|
+|ExecuteUpdateKeyPage()  |   Operation, Key, NewKey, Owner|
+|ExecuteWriteData()     |  DataEntry|
 
 
 ## Reference
