@@ -2,6 +2,16 @@
 
 Python wrapper for accumulate API from https://accumulatenetwork.io/
 
+This project is based on the theme Development Tools. In this project I have built a python sdk which would be serving as a wrapper for the accumulate methods.
+
+Highlights of the python sdk:
+- Methods based version 2 api  (https://testnet.accumulatenetwork.io/v2)
+- Package contains github workflow which will publish library to pypi server, project can views at https://pypi.org/project/py-accumulate/
+- Package contains test cases
+- Package contains doc strings which shows the input of the methods
+- All methods present in accumulate/internal/api/v2 methods.yml have been implemented
+
+
 ## install
 '''python
 pip install py_accumulate
