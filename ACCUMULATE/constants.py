@@ -22,6 +22,7 @@ class ACCUMULATE_METHODS:
     QueryTxHistory = "query-tx-history"
     VERSION = "version"
 
+
 class ACCUMULATE_TYPES:
     IDENTITY = "identity"
     LITE_TOKEN_ACCOUNT = "liteTokenAccount"
@@ -33,3 +34,4 @@ class ACCUMULATE_TYPES:
     METRICS = "metrics"
     DIRECTORY = "directory"
     DATASET = "dataSet"
+    ACME_FAUCET = "acmeFaucet"

@@ -1,25 +1,52 @@
 # py_accumulate
 
-Python wrapper for accumulate API
-
+Python wrapper for accumulate API from https://accumulatenetwork.io/
 
 ## install
 '''python
 pip install py_accumulate
 '''
+
+## pip
+
+package link in pypi: https://pypi.org/project/py-accumulate/
+
 ## Usage
 
 ```python
-from py_accumulate import Accumulate
-ENDPOINT = "https://testnet.accumulatenetwork.io/v1"
+from ACCUMULATE import Accumulate
+ENDPOINT = "https://testnet.accumulatenetwork.io/v2"
 a=Accumulate(ENDPOINT)
-url = "acc://d4c8d9ab07daeecf50a7c78ff03c6524d941299e5601e578/ACME"
-a.get(url)
+a.Version()
 ```
 
-## Endpoints
+## Methods
 
-- get 
+- METHOD_NAME                   :   INPUT
+- Version()
+- Metrics()                     :   metric, duration
+- Faucet()                      :   token_account_url
+- Query()                       :   token_account_url or ADI
+- QueryChain()                  :   CHAIN_ID
+- QueryTx()                     :   txId, wait
+- QueryTxHistory()              :   UrlQuery, QueryPagination
+- QueryData()                   :   Url, EntryHash
+
+- QueryKeyPageIndex()           :   Url, Key
+- QueryDataSet()                :   Url, QueryPagination, QueryOptions
+- QueryDirectory()              :   UrlQuery, QueryPagination, QueryOptions
+
+- Execute()                     :   sponsor, signer, signature, keyPage, payload, checkOnly
+- ExecuteCreateAdi()            :   url, publicKey, keyBookName, keyPageName
+- ExecuteCreateDataAccount()    :   url, KeyBookUrl, ManagerKeyBookUrl
+- ExecuteCreateKeyBook()        :   url, Pages
+- ExecuteCreateKeyPage()        :   url, Keys
+- ExecuteCreateToken()          :   url, Symbol, Precision, Properties
+- ExecuteCreateTokenAccount()   :   url, TokenUrl, KeyBookUrl
+- ExecuteSendTokens()           :   To, Hash, Meta
+- ExecuteAddCredits()           :   Recipient, Amount
+- ExecuteUpdateKeyPage()        :   Operation, Key, NewKey, Owner
+- ExecuteWriteData()            :   DataEntry
 
 
 ## Reference
@@ -27,12 +54,11 @@ a.get(url)
 -https://docs.accumulatenetwork.io/accumulate/developers/api/api-reference
 
 
-## pip
-
-https://pypi.org/project/py-accumulate/0.0.1/#description
-
 ## Developing testing
 
+- Dependencies in requirements.txt
+- Version Mangement in setup.cfg
+
 ```python
-python -m unittest discover -s tests/py_accumulate/ -p 'test_*.py'
+python -m unittest discover -s tests/accumulate/ -p 'test_*.py'
 ```
