@@ -13,9 +13,9 @@ Highlights of the python sdk:
 
 
 ## install
-'''python
+```python
 pip install py_accumulate
-'''
+```
 
 ## pip
 
