@@ -23,8 +23,9 @@ a.Version()
 ## Methods
 
 |   METHOD_NAME     |       INPUT       |
-- Version()
-- Metrics()                     :   metric, duration
+| ------------- | ------------- |
+|   Version()   |   |
+|   Metrics()   |   metric, duration|
 - Faucet()                      :   token_account_url
 - Query()                       :   token_account_url or ADI
 - QueryChain()                  :   CHAIN_ID
