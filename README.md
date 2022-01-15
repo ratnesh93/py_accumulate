@@ -22,7 +22,7 @@ a.Version()
 
 ## Methods
 
-- METHOD_NAME                   :   INPUT
+|   METHOD_NAME     |       INPUT       |
 - Version()
 - Metrics()                     :   metric, duration
 - Faucet()                      :   token_account_url
