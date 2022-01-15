@@ -1,5 +1,4 @@
-from requests.models import codes
-from constants import ACCUMULATE_TYPES 
+from .constants import ACCUMULATE_TYPES 
 
 class Version:
     def __init__(self, commit, version, versionIsKnown):

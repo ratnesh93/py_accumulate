@@ -1,10 +1,9 @@
 import requests
 import json
 
-from requests.sessions import RecentlyUsedContainer
-from exception import ServerError
-from constants import ACCUMULATE_METHODS
-from models import VersionResponse, QueryResponse, QueryMultiResponse, AcmeFaucet, TxResponse, MetricsResponse
+from .exception import ServerError
+from .constants import ACCUMULATE_METHODS
+from .models import VersionResponse, QueryResponse, QueryMultiResponse, AcmeFaucet, TxResponse, MetricsResponse
 
 ENDPOINT = "https://testnet.accumulatenetwork.io/v2"
 URL_acc = "acc://d4c8d9ab07daeecf50a7c78ff03c6524d941299e5601e578/ACME"
@@ -884,7 +883,7 @@ class ExecuteMethods(BaseClass):
 
 
 
-a=Accumulate(ENDPOINT)
+#a=Accumulate(ENDPOINT)
 # res = a.Query(URL_acc)
 # res2= a.Query(ADI)
 #res = a.QueryTxHistory(URL_acc, 2)
@@ -896,18 +895,18 @@ a=Accumulate(ENDPOINT)
 #res = a.QueryData(URL_QUERY_DATA)
 #res = a.QueryData(URL_QUERY_DATA, ENTRY_HASH)
 #res = a.QueryKeyPageIndex(URL_PAGE, PUBLIC_KEY) #: Dont write test case for it
-MetricsQuery = {
-    "metric":URL_acc,
-    "duration": 2
-}
-metric =  "tps"
-duration =  "1h"
-res  = a.Metrics(metric, duration)
-QUERY_PAGINATION = {
-    "start": 1,
-    "count": 2
-}
-QUERY_OPTIONS = {
-    "ExpandChains": True
-}
+# MetricsQuery = {
+#     "metric":URL_acc,
+#     "duration": 2
+# }
+# metric =  "tps"
+# duration =  "1h"
+# res  = a.Metrics(metric, duration)
+# QUERY_PAGINATION = {
+#     "start": 1,
+#     "count": 2
+# }
+# QUERY_OPTIONS = {
+#     "ExpandChains": True
+# }
 #res = a.QueryDirectory(URL_acc, 1,2,True)
