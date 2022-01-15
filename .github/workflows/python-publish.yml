@@ -12,7 +12,7 @@ on:
   push:
     branches: [main]
     paths: 
-      - VERSION
+      - setup.cfg
 
 jobs:
   deploy:
