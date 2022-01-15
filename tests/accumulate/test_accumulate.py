@@ -3,9 +3,9 @@ import sys
 import os
 
 sys.path.append(os.path.abspath(".."))
-sys.path.append(os.path.abspath("../ACCUMULATE"))
-from ACCUMULATE import Accumulate
-from ACCUMULATE.constants import ACCUMULATE_TYPES
+sys.path.append(os.path.abspath("../accumulate"))
+from accumulate import Accumulate
+from accumulate.constants import ACCUMULATE_TYPES
 
 
 class TestClassAccumulate(unittest.TestCase):

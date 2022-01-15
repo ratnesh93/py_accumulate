@@ -14,7 +14,7 @@ package link in pypi: https://pypi.org/project/py-accumulate/
 ## Usage
 
 ```python
-from ACCUMULATE import Accumulate
+from accumulate import Accumulate
 ENDPOINT = "https://testnet.accumulatenetwork.io/v2"
 a=Accumulate(ENDPOINT)
 a.Version()
